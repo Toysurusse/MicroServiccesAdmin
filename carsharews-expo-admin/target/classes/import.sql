@@ -1,0 +1,11 @@
+INSERT INTO roles(id, name) VALUES(1,'ROLE_USER');
+INSERT INTO roles(id, name) VALUES(2,'ROLE_PM');
+INSERT INTO roles(id, name) VALUES(3,'ROLE_ADMIN');
+INSERT INTO public.users (id, email, name, password, username) VALUES (1, 'max.leboiteux@gmail.com', 'Maximilien le boiteux', '$2a$10$TItA2ofntVf71LLpUolOXO04kbhv6LZNaZE7OgW2kWgPsiwEI7zii', 'Test');
+INSERT INTO public.user_roles (user_id, role_id) VALUES (1, 1);
+INSERT INTO public.user_roles (user_id, role_id) VALUES (1, 3);
+INSERT INTO public.events (event_id, active, created_at, delete, name_event, type, update_at, voyage, user_id, city_ville_id) VALUES (1, true, '2019-01-17', false, 'Fête de la musique', '21 janvier', '2019-01-17', 'Bercy', 1,1);
+INSERT INTO public.travels (travel_id, active, code, dispo, travel, type_car, event_event_id, user_id,city_ville_id, city_event_ville_id) VALUES (1, true, 'Single DenisCatrelleTestFête de la musique', 2, 'Single Denis', 'Catrelle', 1, 1,1, 450);
+INSERT INTO public.events (event_id, active, created_at, delete, name_event, type, update_at, voyage, city_ville_id, user_id) VALUES (2, true, '2019-02-01', false, 'Concert Maitre Gims', 'Concert', '2019-02-01', 'Concert au Stade de France', 36432, 1);
+INSERT INTO public.events (event_id, active, created_at, delete, name_event, type, update_at, voyage, city_ville_id, user_id) VALUES (3, true, '2019-02-01', false, 'Trophé Andros', 'Evènement', '2019-02-01', 'Rallie de voiture au Stade de France', 36432, 1);
+INSERT INTO public.events (event_id, active, created_at, delete, name_event, type, update_at, voyage, city_ville_id, user_id) VALUES (4, true, '2019-02-01', false, ' 	  GODS OF RAP  WU-TANG CLAN, PUBLIC ENEMY', 'Concert', '2019-02-01', 'Rap / Hip Hop / Slam', 30894, 1);
